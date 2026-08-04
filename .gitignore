@@ -1,0 +1,108 @@
+# Credenciais — NUNCA versionar
+var/www/html/env.php
+**/env.php
+var/www/html/config.php
+# Env fora do webroot (segredos reais) + template já preenchido com valores reais
+var/www/syde_env.php
+**/syde_env.php
+var/www/syde_env.example.php
+
+# WhatsApp / Baileys — credenciais da conta e dependências (NUNCA commitar!)
+# creds.json + chaves = controle total da conta WhatsApp se vazar.
+opt/whatsapp-baileys-server/sessions/
+opt/whatsapp-baileys-server/node_modules/
+opt/whatsapp-baileys-server/logs/
+**/node_modules/
+**/sessions/
+**/creds.json
+**/wa_internal_key*
+# Snapshot da VPS com sessions/ (credenciais) dentro — nunca commitar.
+whatsapp-baileys-server.zip
+
+# Pacote de update (~38 MB por versão). Ele é ASSET da Release do GitHub, não
+# arquivo do repositório — o cliente baixa pela URL do manifest, nunca do git.
+# Commitá-lo levou o .git a 2,1 GB para um repositório de 4 arquivos.
+syde-windows.zip
+# Mapa de símbolos do build ofuscado: fica fora do pacote, mas também fora do
+# repositório (guarde por versão em local próprio para de-simbolizar crashes).
+build/symbols/
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Chaves privadas — NUNCA commitar
+*.pem
+*.pem.bak
+*.key
+# Exceção: a chave PÚBLICA do auto-update pode (e deve) ficar no repositório —
+# é com ela que se confere a assinatura de um manifest. A regra `*.pem` acima
+# continua valendo para todo o resto, inclusive a privada.
+!update_public.pem
+*private*
+
+# Arquivos de sessão do Claude / continuação
+.continue/
+
+# hash temporario da senha do admin (deploy-fix-admin.bat)
+admin_hash.tmp
+
+# Dumps de banco — NUNCA no projeto (hashes de senha/PIN + PII) — N-25
+# (migration_*.sql sao arquivos de deploy e continuam versionaveis)
+var/*.sql
+*.sql.gz
+*mysqldump*
+pdv_db.sql
+*dump*.sql
+*backup*.sql
+
+# Snapshot completo da VPS (fonte PHP + dump do banco + sessions/creds do
+# WhatsApp) — material confidencial, NUNCA versionar.
+html-backup/
+
+# Backups manuais de fonte (ex.: classic_layout.dart.bak_atalhos). Ficavam em
+# lib/ ocupando 440 KB e apareciam nas buscas do editor como se fossem código.
+*.bak
+*.bak_*
