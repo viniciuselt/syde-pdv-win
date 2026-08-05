@@ -1,1 +1,1 @@
-{"appName":"Syde PDV","currentVersion":"1.0.1","items":[{"version":"1.0.1","shortVersion":2,"platform":"windows","releaseType":"stable","url":"https://github.com/viniciuselt/syde-pdv-win/releases/download/v1.0.1/syde-windows.zip","hash":"sha256:83c2134321f35d1d5a4c881990d3d56e7de221991f777db3e3b8bd755ee1c2cd","size":36835131,"changes":[{"type":"feat","message":"teste"}],"date":"2026-08-04","enforcement":"critical","mandatory":true,"reason":"teste"}]}
+{"appName":"Syde PDV","currentVersion":"0.0.0","items":[]}
