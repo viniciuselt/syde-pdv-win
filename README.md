@@ -1,22 +1,25 @@
-# Syde PDV · Windows
+# Syde PDV · Atualizações para Windows
 
-Repositório de distribuição das atualizações do **Syde PDV para Windows**.
+Canal de distribuição das versões do **Syde PDV para Windows**, com pacotes de atualização e registros das mudanças realizadas no sistema.
 
-Aqui publico novas versões do sistema, com melhorias nas funcionalidades, correções de problemas e atualizações de segurança.
+Aqui você pode acompanhar a evolução do Syde: novos recursos, melhorias nas rotinas de trabalho e correções que ajudam a tornar o uso diário mais estável e prático.
 
-### O que acompanha as atualizações
+### Evolução do sistema
 
-- Novos recursos e integrações.
-- Melhorias no PDV, financeiro e ordens de serviço.
-- Ajustes nos pagamentos e nas permissões de usuários.
-- Correções para manter o sistema atualizado.
+As atualizações contemplam diferentes áreas do Syde, incluindo:
 
-### Versões e novidades
+- **PDV e financeiro:** melhorias nos pagamentos e nas operações de venda.
+- **Ordens de serviço:** ajustes nos recursos e no fluxo de atendimento.
+- **Recursos e integrações:** novas funcionalidades para facilitar o trabalho.
+- **Segurança e permissões:** correções e melhorias no controle de acesso.
+- **Estabilidade:** correção de falhas e aprimoramentos no funcionamento do sistema.
 
-Os pacotes de instalação e os detalhes de cada atualização estão disponíveis na página de versões.
+### Versões disponíveis
 
-[Consultar última versão](https://github.com/viniciuselt/syde-pdv-win/releases/latest) · [Histórico de atualizações](https://github.com/viniciuselt/syde-pdv-win/releases)
+Cada versão publicada possui suas próprias notas de atualização, com a descrição das novidades, melhorias e correções incluídas.
+
+[Consultar última versão](https://github.com/viniciuselt/syde-pdv-win/releases/latest) · [Ver histórico de atualizações](https://github.com/viniciuselt/syde-pdv-win/releases)
 
 ---
 
-Este repositório contém os pacotes e os arquivos de controle das atualizações. O código-fonte do sistema não está incluído.
+Este repositório é destinado à distribuição dos pacotes e dos arquivos de controle das atualizações. O código-fonte do Syde PDV não está incluído.
